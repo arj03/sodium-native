@@ -28,6 +28,7 @@ if (process.argv.indexOf('--print-lib') > -1) {
       break
     case 'openbsd':
     case 'freebsd':
+    case 'android':
     case 'linux':
       console.log(path.join(__dirname, 'lib/libsodium-' + arch + '.so'))
       break
